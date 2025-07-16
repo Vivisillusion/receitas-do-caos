@@ -125,6 +125,22 @@ a:hover {
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease;
+
+  .theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--card-bg, #ffffff);
+  color: var(--text-color, #3e2f1c);
+  border: 2px solid var(--accent-color, #a8401e);
+  border-radius: 6px;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
 }
 
 .back-home a:hover {
