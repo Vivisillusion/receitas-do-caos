@@ -1,4 +1,4 @@
-/* ====== Theme Variables ====== */
+/* === Theme Variables === */
 :root {
   --bg-color: #fff8f0;
   --text-color: #3e2f1c;
@@ -13,7 +13,7 @@ body.dark {
   --card-bg: #2a2a2a;
 }
 
-/* ====== Base Styles ====== */
+/* === Base Styles === */
 body {
   font-family: 'Georgia', serif;
   background-color: var(--bg-color);
@@ -23,7 +23,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* ====== Layout ====== */
+/* === Layout === */
 main {
   max-width: 700px;
   margin: 3rem auto;
@@ -31,10 +31,9 @@ main {
   background-color: var(--card-bg);
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
 }
 
-/* ====== Typography ====== */
+/* === Typography === */
 h1 {
   text-align: center;
   font-size: 2.5rem;
@@ -42,18 +41,16 @@ h1 {
   color: var(--accent-color);
 }
 
-h2,
-h3 {
+h2, h3 {
   margin-top: 2rem;
   color: var(--accent-color);
 }
 
-ul,
-ol {
+ul, ol {
   margin-left: 2rem;
 }
 
-/* ====== General Image Styling (excluding flags) ====== */
+/* === Images === */
 img:not(.flag-icon) {
   display: block;
   max-width: 100%;
@@ -61,22 +58,33 @@ img:not(.flag-icon) {
   border-radius: 10px;
 }
 
-/* ====== Flag Styling ====== */
+/* === Flags — BEHAVE === */
 .flag-icon {
-  width: 24px;
-  height: auto;
-  margin-left: 0.5rem;
-  vertical-align: middle;
+  width: 24px !important;
+  height: auto !important;
+  max-height: 24px;
+  display: inline-block;
+  object-fit: contain;
+  margin: 0 0.5rem;
   border-radius: 2px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease;
+  vertical-align: middle;
 }
 
 .flag-icon:hover {
   transform: scale(1.1);
 }
 
-/* ====== Links ====== */
+/* === Footer === */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* === Links === */
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -86,15 +94,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ====== Footer ====== */
-footer {
-  text-align: center;
-  margin-top: 3rem;
-  font-size: 0.9rem;
-  color: #777;
-}
-
-/* ====== Dark Mode Toggle ====== */
+/* === Theme Toggle Button === */
 .theme-toggle {
   position: fixed;
   top: 1rem;
@@ -110,7 +110,7 @@ footer {
   transition: all 0.3s ease;
 }
 
-/* ====== Back to Home Button ====== */
+/* === Back to Home Button === */
 .back-home {
   text-align: center;
   margin-top: 2rem;
@@ -131,14 +131,3 @@ footer {
   background-color: #822f14;
   transform: scale(1.05);
 }
-
-/* Make sure all .flag-icon images stay small, even when large images are linked */
-.flag-link img.flag-icon {
-  width: 24px !important;
-  height: auto !important;
-  max-height: 24px;
-  object-fit: contain;
-  display: inline-block;
-  margin: 0;
-}
-
