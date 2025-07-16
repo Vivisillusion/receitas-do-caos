@@ -6,23 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="print.css" media="print">
   <style>
-    .flag-icon {
-  width: 24px;
-  height: auto;
-  max-height: 24px;
-  object-fit: contain;
-  display: inline-block;
-  margin-left: 0.5rem;
-  vertical-align: middle;
-  border-radius: 2px;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease;
-}
-
-.flag-icon:hover {
-  transform: scale(1.1);
-}
-
+    /* === Theme Variables === */
     :root {
       --bg-color: #fff8f0;
       --text-color: #3e2f1c;
@@ -37,13 +21,14 @@
       --card-bg: #2a2a2a;
     }
 
+    /* === Base Styles === */
     body {
       font-family: 'Georgia', serif;
       background-color: var(--bg-color);
       color: var(--text-color);
       margin: 0;
       padding: 0;
-      transition: background-color 0.3s, color 0.3s;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     main {
@@ -108,53 +93,64 @@
       color: #777;
     }
 
-  </style>
+    .flag-icon {
+      width: 24px;
+      height: auto;
+      max-height: 24px;
+      object-fit: contain;
+      display: inline-block;
+      margin-left: 0.5rem;
+      vertical-align: middle;
+      border-radius: 2px;
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease;
+    }
 
+    .flag-icon:hover {
+      transform: scale(1.1);
+    }
+
+    /* === Theme Toggle Button === */
+    .theme-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background-color: var(--card-bg);
+      color: var(--text-color);
+      border: 2px solid var(--accent-color);
+      border-radius: 6px;
+      padding: 0.4rem 0.7rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      z-index: 1000;
+      transition: all 0.3s ease;
+    }
+  </style>
 </head>
 
-
+<body>
   <main>
-     <div class="title-container">
-  <h5>En</h5>
-  <a href="https://vivisillusion.github.io/chaos-cookbook/index.html" class="flag-link" title="View in English">
-    <img src="https://images.emojiterra.com/twitter/v13.1/512px/1f1fa-1f1f8.png" alt="English" class="flag-icon">
-  </a>
-</div>
+    <div class="title-container">
+      <h5>En</h5>
+      <a href="https://vivisillusion.github.io/chaos-cookbook/index.html" class="flag-link" title="View in English">
+        <img src="https://images.emojiterra.com/twitter/v13.1/512px/1f1fa-1f1f8.png" alt="English" class="flag-icon">
+      </a>
+    </div>
 
     <h1>Minhas receitas do Caos</h1>
     <p style="text-align:center;">Bem-vindo ao meu livro de receitas. São receitas simples que, eu garanto, podem te trazer alegria</p>
 
     <div class="grid">
-      <div class="card">
-        <a href="polenta.html"><img src="https://media.istockphoto.com/id/1200693628/pt/foto/polenta.jpg?s=1024x1024&w=is&k=20&c=tJVObzpsrVcrTM6BJg1DoIpMsgVIs5VaW1VlqRd0tHE=" alt="Polenta com carne moida"><span>1 Polenta com carne moida</span></a>
-      </div>
-      <div class="card">
-        <a href="spinach.html"><img src="https://images.pexels.com/photos/17200452/pexels-photo-17200452.jpeg" alt="Sopa de espinafre com carne"><span>2 Sopa de espinafre com carne</span></a>
-      </div>
-      <div class="card">
-        <a href="vegetable.html"><img src="https://images.pexels.com/photos/5605561/pexels-photo-5605561.jpeg" alt="Sopa de mandioquinhp"><span>3 Sopa de mandioquinha</span></a>
-      </div>
-      <div class="card">
-        <a href="pancake.html"><img src="https://media.istockphoto.com/id/1300331749/pt/foto/delicious-sliced-pancakes-with-meat-and-tomato-sauce.jpg?s=1024x1024&w=is&k=20&c=QibJl6zLMzGlpvJ7KFoUQ7wgzazsU1TQUU4XGq7o7m0=" alt="Panqueca"><span>4 Panqueca</span></a>
-      </div>
-      <div class="card">
-        <a href="danoninho.html"><img src="https://media.istockphoto.com/id/1331484373/pt/foto/delicious-strawberry-mousse-in-glass-goblet.jpg?s=1024x1024&w=is&k=20&c=knl2rxk_ke7KxEceU-pEbnMHL2oM5mI3RX3AQ9n6DyY=" alt="Fake Danoninho"><span>5 Fake Danoninho</span></a>
-      </div>
-      <div class="card">
-        <a href="sweet-rice.html"><img src="https://media.istockphoto.com/id/1255003413/pt/foto/traditional-june-party-brazilian-dessert-made-of-rice-and-condensed-milk-called-arroz-doce-in.jpg?s=1024x1024&w=is&k=20&c=qCK517j7D-KClzIxw0X57c2wDvTgR5-dSwmVGYUr6A4=" alt="Arroz Doce"><span>6 Arroz Doce</span></a>
-      </div>
-      <div class="card">
-        <a href="bread.html"><img src="https://media.istockphoto.com/id/1125389587/pt/foto/delicious-homemade-sourdough-rye-bread-on-a-plate-and-milk-homemade-baking.jpg?s=1024x1024&w=is&k=20&c=7K0oCTRJ0seb8IBBLsXj1KFTd9sXo54gBQHUhpM_k18=" alt="Pão"><span>7 Pão</span></a>
-      </div>
-      <div class="card">
-        <a href="cake.html"><img src="https://media.istockphoto.com/id/1300318218/pt/foto/table-of-brazilian-festa-junina.jpg?s=1024x1024&w=is&k=20&c=kIZswG2oAj_K-Xa-PqMPUtotAWeEbfsEtHmRvcw_oR0=" alt="Bolo de Fubá"><span>8 Bolo de Fubá</span></a>
-      </div>
-      <div class="card">
-        <a href="chicken-corn.html"><img src="https://media.istockphoto.com/id/1446758272/pt/foto/brazilian-recipe-of-chicken-fricassee-isolated-over-brick-wall.jpg?s=1024x1024&w=is&k=20&c=y3yr3-ROFx9z94WFmSTLqp-qJCsTGNr88q7Hqp23hGw=" alt="Fricasse de Frango"><span>9 Fricasse de Frango</span></a>
-      </div>
-      <div class="card">
-        <a href="beer-pork.html"><img src="https://media.istockphoto.com/id/1221822964/pt/foto/slow-roasted-st-louis-style-baby-back-pork-ribs.jpg?s=1024x1024&w=is&k=20&c=4nUh-DchR0vpCLfhhJM0BAf1H1lVMLm6PGFSqmgKuFQ=" alt="Porco cozido na cerveja preta"><span>10 Porco cozido na cerveja preta</span></a>
-      </div>
+      <div class="card"><a href="polenta.html"><img src="https://media.istockphoto.com/id/1200693628/pt/foto/polenta.jpg?s=1024x1024" alt="Polenta com carne moida"><span>1 Polenta com carne moida</span></a></div>
+      <div class="card"><a href="spinach.html"><img src="https://images.pexels.com/photos/17200452/pexels-photo-17200452.jpeg" alt="Sopa de espinafre com carne"><span>2 Sopa de espinafre com carne</span></a></div>
+      <div class="card"><a href="vegetable.html"><img src="https://images.pexels.com/photos/5605561/pexels-photo-5605561.jpeg" alt="Sopa de mandioquinha"><span>3 Sopa de mandioquinha</span></a></div>
+      <div class="card"><a href="pancake.html"><img src="https://media.istockphoto.com/id/1300331749/pt/foto/delicious-sliced-pancakes-with-meat-and-tomato-sauce.jpg?s=1024x1024" alt="Panqueca"><span>4 Panqueca</span></a></div>
+      <div class="card"><a href="danoninho.html"><img src="https://media.istockphoto.com/id/1331484373/pt/foto/delicious-strawberry-mousse-in-glass-goblet.jpg?s=1024x1024" alt="Fake Danoninho"><span>5 Fake Danoninho</span></a></div>
+      <div class="card"><a href="sweet-rice.html"><img src="https://media.istockphoto.com/id/1255003413/pt/foto/traditional-june-party-brazilian-dessert-made-of-rice-and-condensed-milk-called-arroz-doce-in.jpg?s=1024x1024" alt="Arroz Doce"><span>6 Arroz Doce</span></a></div>
+      <div class="card"><a href="bread.html"><img src="https://media.istockphoto.com/id/1125389587/pt/foto/delicious-homemade-sourdough-rye-bread-on-a-plate-and-milk-homemade-baking.jpg?s=1024x1024" alt="Pão"><span>7 Pão</span></a></div>
+      <div class="card"><a href="cake.html"><img src="https://media.istockphoto.com/id/1300318218/pt/foto/table-of-brazilian-festa-junina.jpg?s=1024x1024" alt="Bolo de Fubá"><span>8 Bolo de Fubá</span></a></div>
+      <div class="card"><a href="chicken-corn.html"><img src="https://media.istockphoto.com/id/1446758272/pt/foto/brazilian-recipe-of-chicken-fricassee-isolated-over-brick-wall.jpg?s=1024x1024" alt="Fricasse de Frango"><span>9 Fricasse de Frango</span></a></div>
+      <div class="card"><a href="beer-pork.html"><img src="https://media.istockphoto.com/id/1221822964/pt/foto/slow-roasted-st-louis-style-baby-back-pork-ribs.jpg?s=1024x1024" alt="Porco cozido na cerveja preta"><span>10 Porco cozido na cerveja preta</span></a></div>
     </div>
 
     <footer>
@@ -163,22 +159,22 @@
       </p>
     </footer>
   </main>
+
   <script>
-  if (localStorage.getItem('theme') === 'dark') {
-    document.body.classList.add('dark');
-  }
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark');
+    }
 
-  const toggle = document.createElement('button');
-  toggle.className = 'theme-toggle';
-  toggle.textContent = 'Toggle Theme';
-  document.body.appendChild(toggle);
+    const toggle = document.createElement('button');
+    toggle.className = 'theme-toggle';
+    toggle.textContent = 'Alternar Tema';
+    document.body.appendChild(toggle);
 
-  toggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-    const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
-    localStorage.setItem('theme', theme);
-  });
-</script>
-
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
+      localStorage.setItem('theme', theme);
+    });
+  </script>
 </body>
 </html>
