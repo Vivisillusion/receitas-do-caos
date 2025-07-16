@@ -6,6 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="print.css" media="print">
   <style>
+    .flag-icon {
+  width: 24px;
+  height: auto;
+  max-height: 24px;
+  object-fit: contain;
+  display: inline-block;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  border-radius: 2px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.flag-icon:hover {
+  transform: scale(1.1);
+}
+
     :root {
       --bg-color: #fff8f0;
       --text-color: #3e2f1c;
