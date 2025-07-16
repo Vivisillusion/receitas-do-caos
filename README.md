@@ -1,6 +1,6 @@
 # 📚 Receitas do Caos
 
-Um site de receitas minimalista, afetuoso e totalmente feito com HTML e CSS — pensado para ser simples, acolhedor e funcional.
+Um site de receitas minimalista, afetuoso e totalmente feito com HTML e CSS, pensado para ser simples, acolhedor e funcional.
 
 Cada receita aqui é uma favorita pessoal. São pratos que reconfortam, nutrem e fazem carinho. Esta versão em português foi criada especialmente para minha mãe, mas também para qualquer um que precise de uma pausa doce no meio do caos.
 
@@ -28,7 +28,7 @@ Um projeto de portfólio que une código limpo, design cuidadoso e um toque de a
 - 🇧🇷 [Receitas do Caos (Português)](https://vivisillusion.github.io/receitas-do-caos)  
 - 🇺🇸 [Chaos Cookbook (English)](https://vivisillusion.github.io/chaos-cookbook)  
 
-Cada página tem um botão de idioma — é só clicar e mudar de versão sem perder o conteúdo.
+Cada página tem um botão de idioma, é só clicar e mudar de versão sem perder o conteúdo.
 
 ## 🎯 Propósito
 
