@@ -1,54 +1,47 @@
-My Chaos Cookbook
-A cozy, minimalist recipe site built with HTML and CSS.
+# 📚 Receitas do Caos
 
-Each recipe is a personal favorite — practical, comforting, and full of flavor.
-This site is built as a portfolio project to showcase semantic HTML structure, clean CSS, and thoughtful design.
+Um site de receitas minimalista, afetuoso e totalmente feito com HTML e CSS — pensado para ser simples, acolhedor e funcional.
 
-🧁 Live Demo
-https://vivisillusion.github.io/chaos-cookbook
+Cada receita aqui é uma favorita pessoal. São pratos que reconfortam, nutrem e fazem carinho. Esta versão em português foi criada especialmente para minha mãe, mas também para qualquer um que precise de uma pausa doce no meio do caos.
 
-📂 Structure
-index.html – Homepage with recipe cards
-recipes/ – Folder with individual recipe pages
-style.css – CSS for layout and theming
-🌙 Features
-Dark mode toggle
-Responsive layout
-Clean, print-friendly formatting
-💌 Author
-Made with love and mischief by Viviane.
-# Receitas do Caos / Chaos Cookbook
+## 🍲 O que é isso?
 
-Welcome to my bilingual recipe collection. This is more than just a site—it’s a love letter written in food.
+Um projeto de portfólio que une código limpo, design cuidadoso e um toque de amor. Simples na estrutura, profundo na intenção.
 
-## 🇧🇷 Receitas do Caos
-Versão em português pensada especialmente para minha mãe. Simples, afetuosa, direta ao ponto. Comida é cuidado, e aqui cada receita é um abraço.
+## 🌙 Funcionalidades
 
-## 🇺🇸 Chaos Cookbook
-The English version was crafted with the same soul—so others could feel a taste of home no matter where they are.
+- Layout responsivo  
+- Modo claro/escuro com alternância de tema  
+- Impressão amigável e sem ruídos  
+- Alternância de idioma com ícones de bandeira  
+- Código HTML semântico e CSS elegante  
 
-## 🔄 Switch Languages
-Every recipe page offers a button to toggle between languages, seamlessly and gracefully.
+## 🗂️ Estrutura
 
-## 🎯 Purpose
-This project was created as part of my personal journey into web development. It blends functionality, accessibility, and emotional value into a living archive of recipes, memories, and affection.
+- `index.html` – Página inicial com cards de receitas  
+- `style.css` – Estilização do site e suporte ao tema escuro  
+- `receitas/` – Pasta com as páginas individuais das receitas  
+- `print.css` – Estilo otimizado para impressão  
 
-## 💡 Features
-- Responsive design
-- Dark mode toggle
-- Internal navigation
-- Language toggle with flag icons
-- Printable pages
+## 🌍 Versões disponíveis
 
-## 🌐 Live Preview
-- [Receitas do Caos (PT)](https://vivisillusion.github.io/receitas-do-caos)
-- [Chaos Cookbook (EN)](https://vivisillusion.github.io/chaos-cookbook)
+- 🇧🇷 [Receitas do Caos (Português)](https://vivisillusion.github.io/receitas-do-caos)  
+- 🇺🇸 [Chaos Cookbook (English)](https://vivisillusion.github.io/chaos-cookbook)  
 
-## 📁 Tech Stack
-- HTML5
-- CSS3
-- GitHub Pages for hosting
+Cada página tem um botão de idioma — é só clicar e mudar de versão sem perder o conteúdo.
 
-## 📬 Contact
-If you liked this, feel free to reach out. I’m always open to feedback, ideas, or praise. Especially praise.
+## 🎯 Propósito
 
+Esse projeto nasceu do meu processo de transição de carreira. Ele mostra meus aprendizados em desenvolvimento web com um toque pessoal: comida, memória, afeto. Não é só código, é cuidado.
+
+## 💻 Tecnologias usadas
+
+- HTML5  
+- CSS3  
+- GitHub Pages para hospedagem  
+
+## 💌 Autoria
+
+Criado com amor e uma pitada de travessura por **Viviane**.
+
+Se quiser conversar, sugerir algo ou simplesmente me elogiar (por favor), a porta está aberta. Sempre.
