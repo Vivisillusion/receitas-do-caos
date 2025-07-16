@@ -1,11 +1,19 @@
-# Receitas do Caos
+My Chaos Cookbook
+A cozy, minimalist recipe site built with HTML and CSS.
 
-Este site é uma versão em português do meu projeto de receitas, feito especialmente para minha mãe, que pediu uma versão que ela pudesse seguir. Todas as receitas são simples, caóticas e carregadas de afeto — como tudo que importa na vida.
+Each recipe is a personal favorite — practical, comforting, and full of flavor.
+This site is built as a portfolio project to showcase semantic HTML structure, clean CSS, and thoughtful design.
 
-## Sobre
+🧁 Live Demo
+https://vivisillusion.github.io/chaos-cookbook
 
-Receitas do Caos é uma coletânea de receitas fáceis e acessíveis, traduzidas e adaptadas com carinho. O objetivo é levar alegria e sabor para o dia a dia, sem complicações.
-
-## Créditos
-
-Feito por mim, com amor, para minha mãe Lindete. ❤️
+📂 Structure
+index.html – Homepage with recipe cards
+recipes/ – Folder with individual recipe pages
+style.css – CSS for layout and theming
+🌙 Features
+Dark mode toggle
+Responsive layout
+Clean, print-friendly formatting
+💌 Author
+Made with love and mischief by Viviane.

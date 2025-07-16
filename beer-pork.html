@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>10 Beer Pork</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+  <h1>10. Beer Pork</h1>
+
+    <p>This is a tender, fall-apart kind of meat that demands almost no effort. Toss everything in the pot, pour in the beer, close the lid and when you open it, dinner is magic. It tastes like something your ancestors might have made if they’d had a pressure cooker and a bad day.</p>
+
+<section>
+  <h2>Ingredients</h2>
+  <ul>
+    <li>500g of pork</li>
+    <li>1 box (approx. 340g) of tomato extract</li>
+    <li>1 purple onion, sliced into rings</li>
+    <li>Half a can or bottle of dark beer</li>
+    <li>Salt and pepper to taste</li>
+    <li>Any other spices you like — bay leaf, garlic powder, smoked paprika</li>
+  </ul>
+</section>
+
+    <section>
+  <h2>Instructions</h2>
+  <ol>
+    <li>Place all ingredients in a pressure cooker. Put the onions on the bottom to make a little bed for your pork, then everything over it, the pork first then you shower it with the beer.</li>
+    <li>Seal the lid and cook on pressure for 40 minutes.</li>
+    <li>Let the steam release naturally before opening.</li>
+    <li>Serve it over rice, mashed potatoes, polenta or just eat it straight out of the pot. No judgment.</li>
+  </ol>
+</section>
+    
+  <img src="https://media.istockphoto.com/id/1221822964/pt/foto/slow-roasted-st-louis-style-baby-back-pork-ribs.jpg?s=1024x1024&w=is&k=20&c=4nUh-DchR0vpCLfhhJM0BAf1H1lVMLm6PGFSqmgKuFQ=" alt="Pork ribs on a plate.">
+    <footer>
+      <p>No Copyright – <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
+  </main>
+  <script>
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+  }
+
+  const toggle = document.createElement('button');
+  toggle.className = 'theme-toggle';
+  toggle.textContent = 'Toggle Theme';
+  document.body.appendChild(toggle);
+
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
+    localStorage.setItem('theme', theme);
+  });
+</script>
+
+</body>
+</html>

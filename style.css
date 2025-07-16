@@ -1,0 +1,98 @@
+/* style.css */
+
+/* ====== Theme Variables ====== */
+:root {
+  --bg-color: #fff8f0;
+  --text-color: #3e2f1c;
+  --accent-color: #a8401e;
+  --card-bg: #ffffff;
+}
+
+body.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #e0d7cd;
+  --accent-color: #ff5e4d;
+  --card-bg: #2a2a2a;
+}
+
+/* ====== Base Styles ====== */
+body {
+  font-family: 'Georgia', serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ====== Layout ====== */
+main {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* ====== Typography ====== */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+h2,
+h3 {
+  margin-top: 2rem;
+  color: var(--accent-color);
+}
+
+ul,
+ol {
+  margin-left: 2rem;
+}
+
+/* ====== Images ====== */
+img {
+  display: block;
+  max-width: 100%;
+  margin: 2rem auto;
+  border-radius: 10px;
+}
+
+/* ====== Footer ====== */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* ====== Links ====== */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ====== Dark Mode Toggle Button ====== */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 6px;
+  padding: 0.4rem 0.7rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}

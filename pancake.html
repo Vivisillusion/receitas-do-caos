@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>4 Brazilian pancake</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+   <h1>4. Brazilian pancake</h1>
+<p>This recipe was passed down to me by my best friend, who learned it from her mother, it was a Sunday tradition in their home. The scent of it alone feels like childhood in a frying pan.</p>
+
+<section>
+  <h2>Ingredients</h2>
+<ul>
+  <li>1 mug (or about 240ml) of milk</li>
+  <li>1 mug of all-purpose flour</li>
+  <li>1 egg</li>
+  <li>1 tablespoon of oil (plus more for the pan)</li>
+  <li>A pinch of salt</li>
+  <li>Your choice of filling: shredded meat, cheese and ham, cream cheese, butter, or whatever your wicked heart desires</li>
+</ul>
+</section>
+
+<section>
+  <h2>Instructions</h2>
+<ol>
+  <li>In a blender, combine the milk, flour, egg, oil, and salt. Blend until the batter is smooth.</li>
+  <li>Heat a non-stick frying pan until it’s very hot — this is crucial. A properly heated pan is the secret to pancakes that don’t stick.</li>
+  <li>Lightly grease the pan with oil. Pour a ladleful of batter and tilt the pan to spread it thinly and evenly.</li>
+  <li>Cook until the edges lift and the bottom is golden. Flip and cook the other side.</li>
+  <li>If the pancake begins to stick, add more oil. This recipe needs a generous amount of oil throughout — embrace it.</li>
+  <li>Serve hot, stuffed with anything that feels like comfort. You deserve it.</li>
+</ol>
+
+    </section>
+    
+    <img src="https://media.istockphoto.com/id/1300331749/pt/foto/delicious-sliced-pancakes-with-meat-and-tomato-sauce.jpg?s=1024x1024&w=is&k=20&c=QibJl6zLMzGlpvJ7KFoUQ7wgzazsU1TQUU4XGq7o7m0=" alt="a plate of brazilian plancake">
+    <footer>
+      <p>No Copyright – <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
+  </main>
+  <script>
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+  }
+
+  const toggle = document.createElement('button');
+  toggle.className = 'theme-toggle';
+  toggle.textContent = 'Toggle Theme';
+  document.body.appendChild(toggle);
+
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
+    localStorage.setItem('theme', theme);
+  });
+</script>
+
+</body>
+</html>

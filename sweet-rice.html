@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>6 Sweet Rice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+  <h1>6. Sweet Rice</h1>
+<p>This is one of those recipes that doesn’t need measuring cups — it asks only for instinct, warmth, and a little cinnamon. A soul recipe. Made to soothe, not impress.</p>
+
+<section>
+  <h2>Ingredients</h2>
+  <ul>
+    <li>White rice</li>
+    <li>Water</li>
+    <li>Milk</li>
+    <li>Sugar</li>
+    <li>Condensed milk</li>
+    <li>Table cream</li>
+    <li>Cinnamon </li>
+  </ul>
+</section>
+
+<section>
+  <h2>Instructions</h2>
+  <ol>
+    <li>In a pot, cook the rice in water — without sugar. Trust me, sugar too early makes the rice stubborn and undercooked. (I've learned the hard way, it doesn't cook!)</li>
+    <li>Once the rice is soft and fully cooked, lower the heat and pour in the milk.</li>
+    <li>Add sugar to taste, a generous scoop of condensed milk, a swirl of table cream, and a pinch of cinnamon.</li>
+    <li>Let everything simmer gently, stirring now and then, until it thickens into creamy, sweet comfort.</li>
+    <li>Serve warm or cold, with more cinnamon sprinkled over the top like a final kiss.</li>
+  </ol>
+</section>
+    
+   <img src="https://media.istockphoto.com/id/1255003413/pt/foto/traditional-june-party-brazilian-dessert-made-of-rice-and-condensed-milk-called-arroz-doce-in.jpg?s=1024x1024&w=is&k=20&c=qCK517j7D-KClzIxw0X57c2wDvTgR5-dSwmVGYUr6A4=" alt="A bowl of sweet rice with cinamon.">
+    <footer>
+      <p>No Copyright – <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
+  </main>
+  <script>
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+  }
+
+  const toggle = document.createElement('button');
+  toggle.className = 'theme-toggle';
+  toggle.textContent = 'Toggle Theme';
+  document.body.appendChild(toggle);
+
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
+    localStorage.setItem('theme', theme);
+  });
+</script>
+
+</body>
+</html>

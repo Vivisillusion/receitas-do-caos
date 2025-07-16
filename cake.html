@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>8 Gluten Free corn meal Cake</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+  <h1>8. Gluten Free corn meal Cake</h1>
+
+    <p>This humble cake has fed generations in Brazil. It’s rustic, golden, and smells like home. Naturally gluten-free, it rises into a crumbly, tender dream, and the cornmeal crust around the edges? Utter perfection.</p>
+
+    <section>
+      <h2>Ingredients</h2>
+      <ul>
+        <li>4 eggs</li>
+        <li>1 American glass (approx. 200ml) of oil</li>
+        <li>1 American glass of milk</li>
+        <li>2 American glasses of sugar</li>
+        <li>2 American glasses of cornmeal</li>
+        <li>A pinch of salt</li>
+        <li>1 tablespoon of baking powder</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Instructions</h2>
+      <ol>
+        <li>Preheat your oven to 180°C (350°F).</li>
+        <li>In a blender, mix the eggs, oil, and milk until smooth.</li>
+        <li>Slowly add the sugar, cornmeal, and salt, blending well after each addition.</li>
+        <li>Finally, stir in the baking powder gently—don’t overmix.</li>
+        <li>Grease a cake pan with oil and sprinkle it with cornmeal instead of flour for a crispy, golden crust.</li>
+        <li>Pour the batter into the prepared pan and bake for about 40 minutes, or until the top is golden and a toothpick comes out clean.</li>
+      </ol>
+    </section>
+    
+  <img src="https://media.istockphoto.com/id/1300318218/pt/foto/table-of-brazilian-festa-junina.jpg?s=1024x1024&w=is&k=20&c=kIZswG2oAj_K-Xa-PqMPUtotAWeEbfsEtHmRvcw_oR0=" alt="A cake on a table.">
+    <footer>
+      <p>No Copyright – <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
+  </main>
+  <script>
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+  }
+
+  const toggle = document.createElement('button');
+  toggle.className = 'theme-toggle';
+  toggle.textContent = 'Toggle Theme';
+  document.body.appendChild(toggle);
+
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
+    localStorage.setItem('theme', theme);
+  });
+</script>
+
+</body>
+</html>

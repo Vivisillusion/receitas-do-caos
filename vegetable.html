@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>3 Vegetable soup</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+   <h1>3. Vegetable soup</h1>
+<p>This is a recipe I first learned while working at a hotel kitchen. They used to serve it with a fresh loaf of bread and a generous sprinkle of parmesan. It's simple, comforting, and always feels like coming home from the rain.</p>
+
+<section>
+  <h2>Ingredients</h2>
+<ul>
+  <li>Pumpkin, diced</li>
+  <li>Carrots, chopped</li>
+  <li>Parsnip, peeled and sliced</li>
+  <li>Potatoes, cubed</li>
+  <li>1 small onion, chopped</li>
+  <li>1 clove garlic, minced</li>
+  <li>Olive oil (or your preferred oil)</li>
+  <li>Salt and pepper to taste</li>
+  <li>Water (enough to cover the vegetables)</li>
+  <li>Parmesan cheese and bread for serving (optional, but magical)</li>
+</ul>
+</section>
+
+<section>
+  <h2>Instructions</h2>
+<ol>
+  <li>In a large pot, heat a bit of oil over medium heat. Sauté the onion and garlic until fragrant.</li>
+  <li>Add the chopped vegetables and season lightly with salt and pepper. Stir and let them sauté for a minute or two—just enough to wake them up.</li>
+  <li>Pour in enough water to cover all the vegetables. Bring to a boil, then reduce the heat and let it simmer until everything is tender, about 20–25 minutes.</li>
+  <li>Turn off the heat. Use a blender or immersion blender to mix the soup until smooth and creamy.</li>
+  <li>Serve warm with crusty bread and a sprinkle of parmesan, if you like. It’s nourishing, humble, and a little bit hotel-luxury.</li>
+</ol>
+
+    </section>
+    <img src="https://images.pexels.com/photos/5605561/pexels-photo-5605561.jpeg" alt="hands holding a mug of yeloow veggie soup">
+    
+    <footer>
+      <p>No Copyright – <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
+  </main>
+  <script>
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+  }
+
+  const toggle = document.createElement('button');
+  toggle.className = 'theme-toggle';
+  toggle.textContent = 'Toggle Theme';
+  document.body.appendChild(toggle);
+
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
+    localStorage.setItem('theme', theme);
+  });
+</script>
+
+</body>
+</html>

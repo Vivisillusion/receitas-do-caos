@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>5 Fake Danoninho</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+<section>
+  <h1>5. Fake Danoninho</h1>
+<p>This sweet treat is a childhood classic in disguise. It's creamy, pink, and dangerously easy to make. Perfect for when you need dessert in five minutes and chaos in the fridge.</p>
+
+<section>
+  <h2>Ingredients</h2>
+  <ul>
+    <li>2 boxes of table cream (approx. 200g each)</li>
+    <li>1 box (395g) of sweetened condensed milk</li>
+    <li>1 packet of strawberry powdered juice (like Tang or Clight)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Instructions</h2>
+  <ol>
+    <li>In a blender, combine the table cream, condensed milk, and powdered juice mix.</li>
+    <li>Blend until completely smooth and pink as sin.</li>
+    <li>Pour into individual cups or a single dish. Refrigerate for at least 2 hours or until firm.</li>
+    <li>Serve chilled. Add a sliced strawberry on top if you want to pretend it's healthy.</li>
+  </ol>
+</section>
+    
+    <img src="https://media.istockphoto.com/id/1331484373/pt/foto/delicious-strawberry-mousse-in-glass-goblet.jpg?s=1024x1024&w=is&k=20&c=knl2rxk_ke7KxEceU-pEbnMHL2oM5mI3RX3AQ9n6DyY=" alt="A bowl of strawberry mousse.">
+    <footer>
+      <p>No Copyright – <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
+  </main>
+  <script>
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+  }
+
+  const toggle = document.createElement('button');
+  toggle.className = 'theme-toggle';
+  toggle.textContent = 'Toggle Theme';
+  document.body.appendChild(toggle);
+
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
+    localStorage.setItem('theme', theme);
+  });
+</script>
+
+</body>
+</html>

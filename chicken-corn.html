@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>9 Chicken Fricasse</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+  <h1>9. Chicken Fricasse</h1>
+
+    <p>This is the kind of recipe that feels like a cozy hug with claws. Velvety, cheesy, golden on top and the oven does most of the work while you lounge in your chaos. Serve it hot, and don’t expect leftovers.</p>
+
+<section>
+  <h2>Ingredients</h2>
+  <ul>
+    <li>500g of chicken breast, cut into cubes (stroganoff-style)</li>
+    <li>1 jar of requeijão (or cream cheese spread)</li>
+    <li>1 can of corn</li>
+    <li>1 box of table cream (creme de leite)</li>
+    <li>1 packet of powdered onion soup mix</li>
+    <li>Salt to taste</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Instructions</h2>
+  <ol>
+    <li>Spread the cubed chicken in a baking dish and season with a bit of salt. Set aside.</li>
+    <li>In a blender, mix the requeijão, corn, table cream, and onion soup powder until smooth.</li>
+    <li>Pour the creamy mixture over the chicken, making sure it’s well covered.</li>
+    <li>Bake in a preheated oven at 180°C (350°F) for about 40 minutes or until golden on top.</li>
+    <li>Right before serving, cover it generously with crispy shoestring potatoes. That crunch? It’s divine.</li>
+    <li>Put it over rice, mashed potatoes, or just eat it with a spoon straight from the dish. No shame.</li>
+  </ol>
+</section>
+    
+  <img src="https://media.istockphoto.com/id/1446758272/pt/foto/brazilian-recipe-of-chicken-fricassee-isolated-over-brick-wall.jpg?s=1024x1024&w=is&k=20&c=y3yr3-ROFx9z94WFmSTLqp-qJCsTGNr88q7Hqp23hGw=" alt="Chicken Fricassé.">
+    <footer>
+      <p>No Copyright – <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
+  </main>
+  <script>
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+  }
+
+  const toggle = document.createElement('button');
+  toggle.className = 'theme-toggle';
+  toggle.textContent = 'Toggle Theme';
+  document.body.appendChild(toggle);
+
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
+    localStorage.setItem('theme', theme);
+  });
+</script>
+
+</body>
+</html>
