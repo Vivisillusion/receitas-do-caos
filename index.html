@@ -1,12 +1,10 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <title>Receitas do Caos</title>
+  <title>Minhas receitas do Caos</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="print.css" media="print">
-
   <style>
     :root {
       --bg-color: #fff8f0;
@@ -93,34 +91,14 @@
       color: #777;
     }
 
-    .theme-toggle {
-      position: fixed;
-      top: 1rem;
-      right: 1rem;
-      background: var(--card-bg);
-      color: var(--text-color);
-      border: 2px solid var(--accent-color);
-      border-radius: 6px;
-      padding: 0.4rem 0.7rem;
-      cursor: pointer;
-      font-size: 0.9rem;
-      transition: all 0.3s ease;
-    }
   </style>
 
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle('dark');
-    }
-  </script>
 </head>
 
-<body>
-  <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark Mode</button>
 
   <main>
-    <h1>Receitas do Caos</h1>
-    <p style="text-align:center;">Bem-vindo ao meu livro de receitas. São receitas simples que, eu garanto, podem trazer alegria.</p>
+    <h1>Minhas receitas do Caos</h1>
+    <p style="text-align:center;">Bem-vindo ao meu livro de receitas. São receitas simples que, eu garanto, podem te trazer alegria</p>
 
     <div class="grid">
       <div class="card">
@@ -142,7 +120,7 @@
         <a href="sweet-rice.html"><img src="https://media.istockphoto.com/id/1255003413/pt/foto/traditional-june-party-brazilian-dessert-made-of-rice-and-condensed-milk-called-arroz-doce-in.jpg?s=1024x1024&w=is&k=20&c=qCK517j7D-KClzIxw0X57c2wDvTgR5-dSwmVGYUr6A4=" alt="Arroz Doce"><span>6 Arroz Doce</span></a>
       </div>
       <div class="card">
-        <a href="bread.html"><img src="https://media.istockphoto.com/id/1125389587/pt/foto/delicious-homemade-sourdough-rye-bread-on-a-plate-and-milk-homemade-baking.jpg?s=1024x1024&w=is&k=20&c=7K0oCTRJ0seb8IBBLsXj1KFTd9sXo54gBQHUhpM_k18=" alt="Pão<"><span>7 Pão</span></a>
+        <a href="bread.html"><img src="https://media.istockphoto.com/id/1125389587/pt/foto/delicious-homemade-sourdough-rye-bread-on-a-plate-and-milk-homemade-baking.jpg?s=1024x1024&w=is&k=20&c=7K0oCTRJ0seb8IBBLsXj1KFTd9sXo54gBQHUhpM_k18=" alt="Pão"><span>7 Pão</span></a>
       </div>
       <div class="card">
         <a href="cake.html"><img src="https://media.istockphoto.com/id/1300318218/pt/foto/table-of-brazilian-festa-junina.jpg?s=1024x1024&w=is&k=20&c=kIZswG2oAj_K-Xa-PqMPUtotAWeEbfsEtHmRvcw_oR0=" alt="Bolo de Fubá"><span>8 Bolo de Fubá</span></a>
@@ -152,151 +130,6 @@
       </div>
       <div class="card">
         <a href="beer-pork.html"><img src="https://media.istockphoto.com/id/1221822964/pt/foto/slow-roasted-st-louis-style-baby-back-pork-ribs.jpg?s=1024x1024&w=is&k=20&c=4nUh-DchR0vpCLfhhJM0BAf1H1lVMLm6PGFSqmgKuFQ=" alt="Porco cozido na cerveja preta"><span>10 Porco cozido na cerveja preta</span></a>
-      </div>
-    </div>
-
-    <footer>
-      <p>No Copyright –
-        <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
-      </p>
-    </footer>
-  </main>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>My Chaos Cookbook</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="print.css" media="print">
-  <link rel="stylesheet" href="style.css">
-
-  <style>
-    :root {
-      --bg-color: #fff8f0;
-      --text-color: #3e2f1c;
-      --accent-color: #a8401e;
-      --card-bg: #ffffff;
-    }
-
-    body.dark {
-      --bg-color: #1e1e1e;
-      --text-color: #e0d7cd;
-      --accent-color: #ff5e4d;
-      --card-bg: #2a2a2a;
-    }
-
-    body {
-      font-family: 'Georgia', serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      margin: 0;
-      padding: 0;
-      transition: background-color 0.3s, color 0.3s;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 3rem auto;
-      padding: 2rem;
-      background-color: var(--card-bg);
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      color: var(--accent-color);
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-
-    .card {
-      background-color: var(--card-bg);
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: scale(1.03);
-    }
-
-    .card img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-      display: block;
-    }
-
-    .card a {
-      display: block;
-      padding: 0.5rem;
-      color: var(--accent-color);
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .card a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-
-  </style>
-
-</head>
-
-
-  <main>
-    <h1>My Chaos Cookbook</h1>
-    <p style="text-align:center;">Welcome to my recipe book, they are simple recipes that I guarantee can bring you joy</p>
-
-    <div class="grid">
-      <div class="card">
-        <a href="polenta.html"><img src="https://media.istockphoto.com/id/1200693628/pt/foto/polenta.jpg?s=1024x1024&w=is&k=20&c=tJVObzpsrVcrTM6BJg1DoIpMsgVIs5VaW1VlqRd0tHE=" alt="Polenta with minced meat"><span>1 Polenta with minced meat</span></a>
-      </div>
-      <div class="card">
-        <a href="spinach.html"><img src="https://images.pexels.com/photos/17200452/pexels-photo-17200452.jpeg" alt="Spinach and minced meat soup"><span>2 Spinach and minced meat soup</span></a>
-      </div>
-      <div class="card">
-        <a href="vegetable.html"><img src="https://images.pexels.com/photos/5605561/pexels-photo-5605561.jpeg" alt="Vegetable soup"><span>3 Vegetable soup</span></a>
-      </div>
-      <div class="card">
-        <a href="pancake.html"><img src="https://media.istockphoto.com/id/1300331749/pt/foto/delicious-sliced-pancakes-with-meat-and-tomato-sauce.jpg?s=1024x1024&w=is&k=20&c=QibJl6zLMzGlpvJ7KFoUQ7wgzazsU1TQUU4XGq7o7m0=" alt="Brazilian pancake"><span>4 Brazilian pancake</span></a>
-      </div>
-      <div class="card">
-        <a href="danoninho.html"><img src="https://media.istockphoto.com/id/1331484373/pt/foto/delicious-strawberry-mousse-in-glass-goblet.jpg?s=1024x1024&w=is&k=20&c=knl2rxk_ke7KxEceU-pEbnMHL2oM5mI3RX3AQ9n6DyY=" alt="Fake Danoninho"><span>5 Fake Danoni- nho</span></a>
-      </div>
-      <div class="card">
-        <a href="sweet-rice.html"><img src="https://media.istockphoto.com/id/1255003413/pt/foto/traditional-june-party-brazilian-dessert-made-of-rice-and-condensed-milk-called-arroz-doce-in.jpg?s=1024x1024&w=is&k=20&c=qCK517j7D-KClzIxw0X57c2wDvTgR5-dSwmVGYUr6A4=" alt="Sweet Rice"><span>6 Sweet Rice</span></a>
-      </div>
-      <div class="card">
-        <a href="bread.html"><img src="https://media.istockphoto.com/id/1125389587/pt/foto/delicious-homemade-sourdough-rye-bread-on-a-plate-and-milk-homemade-baking.jpg?s=1024x1024&w=is&k=20&c=7K0oCTRJ0seb8IBBLsXj1KFTd9sXo54gBQHUhpM_k18=" alt="Tasteless Bread"><span>7 Tasteless Bread</span></a>
-      </div>
-      <div class="card">
-        <a href="cake.html"><img src="https://media.istockphoto.com/id/1300318218/pt/foto/table-of-brazilian-festa-junina.jpg?s=1024x1024&w=is&k=20&c=kIZswG2oAj_K-Xa-PqMPUtotAWeEbfsEtHmRvcw_oR0=" alt="Corn Meal Cake"><span>8 GF Corn Meal Cake</span></a>
-      </div>
-      <div class="card">
-        <a href="chicken-corn.html"><img src="https://media.istockphoto.com/id/1475303160/pt/foto/chicken-with-creamed-corn-on-a-black-plate-with-vegetables-in-the-background.jpg?s=1024x1024&w=is&k=20&c=guCVYCckpoSQPQiZze7o0F3ZOWGpbWv49c7F1j6W-UE=" alt="Chicken and Corn Cream"><span>9 Chicken and Corn Cream</span></a>
-      </div>
-      <div class="card">
-        <a href="beer-pork.html"><img src="https://media.istockphoto.com/id/1221822964/pt/foto/slow-roasted-st-louis-style-baby-back-pork-ribs.jpg?s=1024x1024&w=is&k=20&c=4nUh-DchR0vpCLfhhJM0BAf1H1lVMLm6PGFSqmgKuFQ=" alt="Beer Pork"><span>10 Beer Pork</span></a>
       </div>
     </div>
 
