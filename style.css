@@ -131,3 +131,14 @@ footer {
   background-color: #822f14;
   transform: scale(1.05);
 }
+
+/* Make sure all .flag-icon images stay small, even when large images are linked */
+.flag-link img.flag-icon {
+  width: 24px !important;
+  height: auto !important;
+  max-height: 24px;
+  object-fit: contain;
+  display: inline-block;
+  margin: 0;
+}
+
